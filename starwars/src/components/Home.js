@@ -71,7 +71,7 @@ const Home = () => {
   }, []);
 
   const handleSubmit = (e) => {
-    e.preventDefault();\
+    e.preventDefault();
     if (searchInput.length >= 3) {
       const fitler = actors.filter((actor) => actor.name.includes(searchInput));
       setFilter(fitler);
